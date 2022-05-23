@@ -1,0 +1,193 @@
+
+
+
+.sidebar{
+    background-color: var(--main-bg);
+    top:0;
+    left: 0;
+    height: 100vh;
+    min-width: 400px;
+    // box-shadow: var(--box-shadow);
+    border-right: 0.5px solid #E8E8E8;
+    position: fixed;
+}
+
+.sidebar__logo{
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 9.5rem;
+    
+
+    .logohover{
+        height: 55px;
+        width: 55px;
+      
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        background-color: unset;
+        &:hover{
+            background-color: #EFF6F9;
+        }
+
+        
+    }
+
+  
+
+    img{
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        text-align: center;
+        padding-left: 0.5px;
+       
+       
+
+       
+    }
+
+}
+
+.sidebar__item{
+    padding: 0px 9rem;
+}
+
+
+.sidebar__item-inner{
+
+    // background-color: aqua;
+
+    font-weight: 600px;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    align-items: center;
+    height: 55px;
+    display: flex;
+    border-radius: 30px;
+    max-width: max-content;
+    width: 100%;
+
+    
+    
+
+    i{
+        margin-right: 1rem;
+        font-size: 2rem;
+        align-items: center;
+        margin-left: 1rem;
+        
+       
+    }
+
+    
+   
+
+    &:hover{
+        background-color:#F1F6F8 ;
+        
+    }
+    span{
+        padding-right: 1rem;
+    }
+
+    .frame_news{
+        
+        
+        color: #1da1f2;
+        margin-top: -70px;
+        // background-color: aqua;
+        font-size: 60px;
+        margin-left: 2rem;
+        position: absolute;
+
+    }
+
+}
+
+.sidebar__item-inner.active{
+    
+    font-weight: 700;
+    color: black;
+
+    i{
+        color: black;
+    }
+}
+
+.frame_Button{
+
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 9rem;
+    position: absolute;
+    width: 300px;
+
+    button{
+
+       width: 300px;
+       background-color: #1da1f2;
+       color: white;
+       height: 60px;
+       border-radius: 30px;
+       
+
+        
+    }
+
+}
+
+.frame_fake_button{
+
+    height: 70px;
+    // align-items: center;
+    // justify-content: center;
+
+    position: absolute;
+
+    width: 300px;
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    cursor: pointer;
+
+    .frame_fake_button_img{
+        height: 2.5rem;
+        width: 2.5rem;
+        
+
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            margin: 0 1rem ;
+        }
+    }
+
+    .frame_fake_button_title{
+        margin-left: 2rem;
+        .NameUser{
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    }
+    
+    .frame_icon_dot{
+        margin-left: 15%;
+        i{
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+    }
+    &:hover{
+        background-color:#E8E8E8 ;
+        
+    }
+
+}

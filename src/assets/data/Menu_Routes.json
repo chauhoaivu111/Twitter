@@ -1,0 +1,71 @@
+[
+
+    {
+        "display_name":  "Home",
+        "route": "/",
+        "icon":"bx bx-home-circle",
+        "icons":"bx bxs-home-circle",
+        "badge": "."
+      
+
+    },
+    {
+        "display_name":  "Explore",
+        "route": "/Explore",
+        "icon":"bx bx-hash",
+        "icons":"bx bx-hash"
+        
+
+    },
+    {
+        "display_name":  "Notifications",
+        "route": "/Notifications",
+        "icon":"bx bx-bell",
+        "icons":"bx bxs-bell"
+        
+
+    },
+    {
+        "display_name":  "Messages",
+        "route": "/Messages",
+        "icon":"bx bx-envelope",
+        "icons":"bx bxs-envelope"
+        
+
+    },
+      {
+        "display_name":  "Bookmarks",
+        "route": "/Bookmarks",
+        "icon":"bx bx-bookmark",
+        "icons":"bx bxs-bookmark"
+        
+
+    },
+
+    {
+        "display_name":  "List",
+        "route": "/List",
+        "icon":"bx bx-news",
+        "icons":"bx bxs-news"
+        
+
+    },
+    {
+        "display_name":  "Profile",
+        "route": "/Profile",
+        "icon":"bx bx-user",
+        "icons":"bx bxs-user"
+        
+
+    },
+    {
+        "display_name":  "More",
+        "route": "/More",
+        "icon":"bx bx-dots-horizontal-rounded",
+        "icons":"bx bx-dots-horizontal-rounded"
+        
+
+    }
+   
+]
+
