@@ -1,0 +1,40 @@
+
+[
+
+    {
+        "display_name":  "Home",
+        "route": "/",
+        "icon":"bx bx-home-circle",
+        "icons":"bx bxs-home-circle",
+        "badge": "."
+      
+
+    },
+    {
+        "display_name":  "Search",
+        "route": "/Search",
+        "icon":"bx bx-search",
+        "icons":"bx bx-search"
+        
+
+    },
+    {
+        "display_name":  "Notifications",
+        "route": "/Notifications",
+        "icon":"bx bx-bell",
+        "icons":"bx bxs-bell"
+        
+
+    },
+    {
+        "display_name":  "Messages",
+        "route": "/Messages",
+        "icon":"bx bx-envelope",
+        "icons":"bx bxs-envelope"
+        
+
+    }
+    
+   
+]
+

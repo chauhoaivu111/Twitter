@@ -1,9 +1,33 @@
 
 
+@use '../../sass/' as *;
+
 .layout {
     display: flex;
     position: relative;
+  
+    
+    
+
+
 }
 
 
+.layout__content{
+
+   
+
+    background-color: var(--second-bg);
+    height: 10000px;
+    width: 49rem;
+    border-right: 0.5px solid #E8E8E8;
+    
+
+    
+   
+
+   
+  
+   
+}
 

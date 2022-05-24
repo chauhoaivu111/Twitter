@@ -1,0 +1,45 @@
+
+@use '../../sass/' as * ;
+
+.main_frames{
+    
+    margin-bottom: 1.5rem;
+
+    &__contents{
+        display: flex;
+        // background-color: aqua;
+        @include flex(center,space-between);
+
+       
+
+            .title{
+                color: #818181;
+                font-size: 0.9rem;
+            }
+            
+            .name{
+                font-weight: 600;
+                padding: 0.4rem 0 0.4rem ;
+                font-size: 1.2rem;
+            }
+            .number_tweet{
+                color: #818181;
+            }
+
+
+        .frame_icon_appbarright{
+
+          
+            
+
+            i{
+                font-size: 1.5rem;
+                
+            }
+
+        }
+
+       
+        
+    }
+}

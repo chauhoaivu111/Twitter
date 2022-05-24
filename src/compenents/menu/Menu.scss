@@ -1,3 +1,4 @@
+@use '../../sass/' as *;
 
 
 
@@ -9,7 +10,13 @@
     min-width: 400px;
     // box-shadow: var(--box-shadow);
     border-right: 0.5px solid #E8E8E8;
-    position: fixed;
+    position: sticky;
+    // position: ;
+
+    @include mobile{
+        display:  none;
+    }
+
 }
 
 .sidebar__logo{
@@ -135,6 +142,7 @@
        color: white;
        height: 60px;
        border-radius: 30px;
+       font-size: 1.2rem;
        
 
         
