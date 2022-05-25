@@ -10,6 +10,8 @@ $header-shrink-height:5rem;
 $border-radius:30px;
 $mobile-width:600px;
 $tablet-width:1024px;
+$border-line:0.5px solid #E8E8E8;
+$backgound_appbar:#F4F6F8;
 
 $font-family: "Montserrat",sans-serif;
 
@@ -112,11 +114,19 @@ ul{
 
 input{
   border: 1px solid transparent;
-  outline: o;
+  outline: 0;
 }
 
-input:focus {
-  border: 1px solid var(--color-twitter);
+// input:focus {
+//   border: 1px solid var(--color-twitter);
+// }
+
+textarea{
+  border: 1px solid transparent;
+  outline: 0;
+  overflow: hidden;
+  outline: none;
+  resize: none;
 }
 
 

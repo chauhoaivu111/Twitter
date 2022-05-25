@@ -1,0 +1,23 @@
+[
+    {
+        "icon":"bx bx-message-rounded",
+        "likes":"2",
+        "title":"Reply"
+    },
+    {
+        "icon1":"bx bx-repost",
+        "likes1":"6",
+        "title1":"Retweet"
+    },
+    {
+        "icon2":"bx bx-heart",
+        "likes2":"1",
+        "title2":"Like"
+    },
+    {
+        "icon3":"bx bx-upload",
+        "title3":"Share"
+        
+    }
+
+]

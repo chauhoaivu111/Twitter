@@ -8,26 +8,51 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
+import HV from "../../assets/image/HV.jpg";
+import Status from "../../compenents/status/Status";
+import PostCard from "../../compenents/postcard/PostCard";
+
+import data_content from "../../assets/data/Data_content";
+
 const Home = () => {
-
-
   const titles = {
-
-        title:"Home"
-  }
+    title: "Home",
+    HV: HV,
+  };
 
   return (
     <div className="main_home">
-      <TopNavHome
+      <TopNavHome Title={titles.title} image={titles.HV} />
 
-        Title={titles.title}
-      
-      />
-      
-      
-
-      <div style={{marginTop:"300px"}}>
-        chauhaouvu
+      <div className="frame_status">
+        <Status />
+        <div>
+          {/* <img src={HV} /> */}
+          {data_content.map((item, index) => (
+            <div key={index}  className="frame_status__contents" >
+              <PostCard
+                avatar={item.avatar}
+                current={item.current}
+                current_title={item.current_title}
+                name_user={item.name_user}
+                subname_user={item.subname_user}
+                content={item.content}
+                image={item.image}
+                icon={item.icon}
+                title={item.title}
+                likes={item.likes}
+                icon1={item.icon1}
+                title1={item.title1}
+                likes1={item.likes1}
+                icon2={item.icon2}
+                title2={item.title2}
+                likes2={item.likes2}
+                icon3={item.icon3}
+                title3={item.title3}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       <div>

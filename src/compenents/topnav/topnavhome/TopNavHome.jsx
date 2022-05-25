@@ -37,7 +37,7 @@ const TopNavHome = props => {
     <div className='header'>
         <div className='header__wrap'>
             <div className='user_header'>
-                <img src={HV}/>
+                <img src={props.image}/>
                 <h2>{props.Title}</h2>
             </div>
 
