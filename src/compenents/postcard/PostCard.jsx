@@ -40,6 +40,7 @@ const PostCard = (props) => {
           <img src={props.image} />
         </div>
         <div className="Card_icon">
+        
 
           <div className="num_icon">
               <div className="hover_i">

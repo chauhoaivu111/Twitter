@@ -1,4 +1,5 @@
 import React from "react";
+import MenuMobile from "../menumobile/MenuMoile";
 
 import './BottomAppBar.scss'
 
@@ -17,7 +18,10 @@ const BottomAppBar = (props) => {
 
       <div className="sub_content__right">
           <button>Follow</button>
+         
       </div>
+
+      <MenuMobile/>
     </div>
   );
 };

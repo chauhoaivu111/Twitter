@@ -138,3 +138,74 @@
     }
   }
 }
+
+
+
+.theme-menu {
+  position: absolute;
+  left: -300px;
+  top:0;
+  width: 270px;
+  height: 100vh;
+  display: none;
+  
+  z-index: 99;
+  background-color: var(--main-bg);
+  box-shadow: var(--box-shadow);
+  transition:  right 0.5s var(--transition-cubic);
+
+  @include mobile {
+    display: block;
+  }
+
+  &__top_frame{
+    // background-color: red;
+    padding: 15px;
+    border-bottom: $border-line;
+  }
+
+  .main_frame_menu , .second_frame_menu , .third_frame_menu{
+    border-bottom: $border-line;
+
+  }
+  .four_frame_menu{
+    display: flex;
+    @include flex(center,unset);
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+
+    i{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.8rem;
+        margin-left: 0.4rem;
+    }
+  }
+
+
+
+
+  &__second_scroll{
+    padding: 10px;
+  }
+
+}
+
+.theme-menu.active  {
+  left: 0;
+
+}
+.theme-menu__close{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+

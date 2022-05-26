@@ -21,6 +21,7 @@
     &__mainContent {
       display: flex;
       @include flex(unset, space-between);
+      // position: relative;
 
       &__avatar_content_name {
         display: flex;
@@ -30,26 +31,27 @@
         .frame_img {
           width: 60px;
           height: 60px;
-          position: absolute;
+          // position: relative;
           @include mobile {
-            height: 45px;
-            width: 45px;
+            height: 40px;
+            width: 40px;
+            // margin-left: -5px;
           }
           img {
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            position: absolute;
+            // position: absolute;
             object-fit: cover;
           }
         }
 
         .content_name {
-          padding-left: 5rem;
+          padding-left: 1rem;
           margin-top: 0.2rem;
 
           @include mobile {
-            padding-left: 3.5rem;
+            padding-left: 0.5rem;
           }
 
           .UserName_time {
@@ -61,7 +63,7 @@
               font-weight: 600;
 
               @include mobile {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
               }
             }
             .subname_user {
@@ -70,7 +72,7 @@
               color: var(--color-text);
               @include mobile {
                 font-size: 0.7rem;
-                margin-left: 0.4rem;
+                margin-left: 0rem;
               }
             }
           }
@@ -80,6 +82,9 @@
             p {
               font-size: 1.1rem;
               font-weight: 400;
+              @include mobile{
+                font-size: 0.8rem;
+              }
             }
           }
         }
@@ -90,6 +95,10 @@
         height: 40px;
         // background-color: aquamarine;
         margin-right: 1rem;
+
+        @include mobile {
+          margin-right: 0;
+        }
 
         .buttons {
           // background-color: #9BCDFB;
@@ -122,6 +131,10 @@
 
       padding-left: 4rem;
       padding-top: 0.8rem;
+      @include mobile{
+        margin-left: -5px;
+        padding-top: 0px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -131,6 +144,10 @@
 
     .Card_icon {
       display: flex;
+      // position: relative;
+      @include mobile{
+        margin-left: -10px;
+      }
 
       .num_icon {
         display: flex;
@@ -139,6 +156,7 @@
         margin-left: 4.5rem;
         margin-top: 0.9rem;
         margin-bottom: 0.5rem;
+       
         @include mobile{
 
             margin-left: 4rem;
@@ -153,6 +171,7 @@
             }
         }
         .tooltip {
+          position: inherit;
           &:hover {
             background-color: #e3effa;
             color: #63b3fc;
@@ -193,6 +212,7 @@
         }
 
         .tooltips {
+          position: inherit;
             &:hover {
               background-color: #DEF1E4;
               color: #75E59B;
@@ -210,6 +230,7 @@
 
 
           .tooltipss {
+            position: inherit;
             &:hover {
               background-color: #EBD0DD;
               color: #D60268;
@@ -227,6 +248,7 @@
 
 
           .tooltipsss {
+            position: inherit;
             &:hover {
               background-color: #e3effa;
               color: #63b3fc;
