@@ -41,7 +41,7 @@ $font-family: "Montserrat",sans-serif;
 
   --box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
 
-
+  overflow-x: unset;
 
   --color-text:#818181;
   --main-bg-light: #ffffff;
@@ -70,6 +70,9 @@ $font-family: "Montserrat",sans-serif;
   --second-color-orange: #fca11a;
 
   --color-twitter:#1da1f2;
+
+  touch-action: pan-x pan-y;
+  height: 100% 
 
 }
 

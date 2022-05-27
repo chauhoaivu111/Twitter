@@ -24,13 +24,13 @@
             // display: none;
             max-width: max-content;
             width: 100%;
+            margin-top: 60px;
 
             // margin-right: 0px;
             // width: 50%;
 
            
         }
-
         &__contents{
             // margin-top: 1rem;
             // border-top: $border-line;
@@ -40,9 +40,11 @@
         }
         
 
+      
         .frame_status__contents{
            
             border-top: $border-line;
+            
          
 
             &:hover{
@@ -105,16 +107,21 @@
             margin-top: 0px;
             
             height: max-content;
-            margin-bottom: 1.5%;
+            // margin-bottom: 1.5%;
 
-            padding: 1.5rem 1.5rem 1.5rem ;
+            // padding: 1.5rem 1.5rem 1.5rem ;
+            // background-color: aquamarine;
+            
             
 
             h2{
                 padding: 0rem 0 2rem ;
+                padding: 1.5rem 1.5rem 1.5rem ;
             }
             .see{
                 color:var(--color-twitter);
+                padding: 1.5rem 1.5rem 1.5rem ;
+                
             }
 
         }

@@ -13,7 +13,7 @@ const data_content = [
     time: "2h",
     subname_user: "@MinhChi01012000 . 4h",
     // current_title: "Hoài Vũ" + " " + "Retweeted",
-    content: "Đẹp Trai Không",
+    content: "Đẹp Trai Không sfbsjdfhjsdkf fshdiufhusif suihfuisef yusufyef suhufisdf fshdfjdsk sfndskfjsd sjfsdjfk sfjs sjfhsjf uiguasf auahfs ahdaud uadgads  sfy7rw rwyef usyfe fwfgw ssyfew f",
     image: img_MC,
     icon: "bx bx-message-rounded",
     likes: "1",

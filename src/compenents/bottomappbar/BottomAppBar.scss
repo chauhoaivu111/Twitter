@@ -6,6 +6,8 @@
 .sub_content{
     display: flex;
     @include flex(center,space-between);
+
+    padding: 0px 1.5rem 0px;
     
 
 

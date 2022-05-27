@@ -1,114 +1,114 @@
 
 
-@use '../../sass/' as *;
+// @use '../../sass/' as *;
 
-.main_home{
-    display: flex;
-    position: absolute;
+// .main_home{
+//     display: flex;
+//     position: absolute;
 
     
 
    
 
 
-    .set_position_search{
-        margin-left: 41.4%;
-        position: fixed;
-        // background-color: aquamarine;
-        margin-bottom: 4rem;
+//     .set_position_search{
+//         margin-left: 41.4%;
+//         position: fixed;
+//         // background-color: aquamarine;
+//         margin-bottom: 4rem;
         
         
-    }
+//     }
 
     
-    .frame_main_appbarRight{
-        margin-left: 41.5%;
-        cursor: pointer;
+//     .frame_main_appbarRight{
+//         margin-left: 41.5%;
+//         cursor: pointer;
 
-        position: fixed;
-        overflow-y: auto;
-        // background-color:red;
-        height: 100vh;
-        width: 86%;
-        // border-left: 0.5px solid #E8E8E8;
-       margin-top: 4%;
-    //    background-color: red;
+//         position: fixed;
+//         overflow-y: auto;
+//         // background-color:red;
+//         height: 100vh;
+//         width: 86%;
+//         // border-left: 0.5px solid #E8E8E8;
+//        margin-top: 4%;
+//     //    background-color: red;
 
        
       
 
-        @include mobile{
-            display: none;
-        }
+//         @include mobile{
+//             display: none;
+//         }
 
        
 
-        .content{
-            background-color: #F4F6F8;
-            // background-color: aqua;
-            width: 25.8%;
-            border-radius: 20px;
+//         .content{
+//             background-color: #F4F6F8;
+//             // background-color: aqua;
+//             width: 25.8%;
+//             border-radius: 20px;
 
-            margin: 1.5rem;
-            margin-top: 0px;
+//             margin: 1.5rem;
+//             margin-top: 0px;
             
-            height: max-content;
-            margin-bottom: 1.5%;
+//             height: max-content;
+//             margin-bottom: 1.5%;
 
-            padding: 1.5rem 1.5rem 1.5rem ;
+//             padding: 1.5rem 1.5rem 1.5rem ;
             
 
-            h2{
-                padding: 0rem 0 2rem ;
-            }
-            .see{
-                color:var(--color-twitter);
-            }
+//             h2{
+//                 padding: 0rem 0 2rem ;
+//             }
+//             .see{
+//                 color:var(--color-twitter);
+//             }
 
-        }
-        .marginBottom {
-            margin-bottom: 20%;
-        }
+//         }
+//         .marginBottom {
+//             margin-bottom: 20%;
+//         }
 
 
 
-        .frame_copyright{
+//         .frame_copyright{
 
-            width: 27%;
-            border-radius: 20px;
+//             width: 27%;
+//             border-radius: 20px;
 
-            margin: 1.5rem;
-            margin-bottom: 15%;
+//             margin: 1.5rem;
+//             margin-bottom: 15%;
           
           
 
-            padding: 0rem 1.5rem 1.5rem ;
+//             padding: 0rem 1.5rem 1.5rem ;
 
-            &__one{
-                display: flex;
-                p{
-                    margin-right: 0.7rem;
-                    font-size: 0.9rem;
-                    color: var(--color-text);
-                }
-            }
-            &__second {
+//             &__one{
+//                 display: flex;
+//                 p{
+//                     margin-right: 0.7rem;
+//                     font-size: 0.9rem;
+//                     color: var(--color-text);
+//                 }
+//             }
+//             &__second {
 
-                display: flex;
-                margin-top: 0.4rem;
-                width: 100%;
-                // background-color: aquamarine;
-                p{
-                    margin-right: 0.7rem;
-                    font-size: 0.9rem;
-                    color: var(--color-text);
-                }
+//                 display: flex;
+//                 margin-top: 0.4rem;
+//                 width: 100%;
+//                 // background-color: aquamarine;
+//                 p{
+//                     margin-right: 0.7rem;
+//                     font-size: 0.9rem;
+//                     color: var(--color-text);
+//                 }
 
-            }
+//             }
 
 
 
-        }
+//         }
 
-    }
-}
+//     }
+// }

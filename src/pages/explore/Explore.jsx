@@ -1,32 +1,76 @@
 import React from "react";
-import AppBarRight from "../../compenents/secondappbar/AppBarRight";
-
-import TopNavHome from "../../compenents/topnav/topnavhome/TopNavHome";
-import "./Home.scss";
-
-import data_list from "../../assets/data/second_appbar.json";
-import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
+import TopNavExplore from "../../compenents/topnav/topnavexplore/TopNavExplore";
+import HV from "../../assets/image/HV.jpg";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
-import Status from "../../compenents/status/Status";
-import PostCard from "../../compenents/postcard/PostCard";
+import "./Explore.scss";
+import player from "../../assets/image/img_explore.jpg";
 
+import FisrtNav, { Second_Nav } from "../../compenents/topnav/topnavexplore/firstnav/FisrtNav";
+import data_explore_nav from "../../assets/data/content_explore.json";
+import { List_Second_nav } from "../../assets/data/Second_Nav_List";
+import PostCard from "../../compenents/postcard/PostCard";
 import data_content from "../../assets/data/Data_content";
 
-const Home = () => {
+const Explore = () => {
   const titles = {
-    title: "Home",
+    title: "Explore",
     HV: HV,
   };
 
   return (
-    <div className="main_home">
-      <TopNavHome Title={titles.title} image={titles.HV} />
+    <div className="main_explore">
+      <TopNavExplore Title={titles.title} image={titles.HV} />
 
-      <div className="frame_status">
-        <Status />
-        <div className='style_fit'>
+      <div className="main_explore__only_image">
+        <img src={player} alt="" />
+      </div>
+
+      <div className="nav_content">
+        <div className="contents_nav">
+          <h2> Trending for you</h2>
+        </div>
+
+        {data_explore_nav.map((item, index) => (
+          <div key={index}>
+            <FisrtNav
+              title={item.title}
+              name={item.name}
+              number_tweet={item.number_tweet}
+            />
+          </div>
+        ))}
+
+        <div className="div_showmore">
+          <p>Show more</p>
+        </div>
+
+      </div>
+
+      <div className="nav_content">
+        <div className="contents_nav">
+          <h2> What's happening</h2>
+        </div>
+
+        {List_Second_nav.map((item, index) => (
+          <div key={index}>
+          <Second_Nav
+          
+          Title ={item.title}
+          Topic={item.topic}
+          image={item.image}
+          
+          />
+          </div>
+        ))}
+
+        <div className="div_showmore">
+          <p>Show more</p>
+        </div>
+
+      </div>
+
+      <div className='style_fit'>
         
           {data_content.map((item, index) => (
             <div key={index}  className="frame_status__contents" >
@@ -53,31 +97,8 @@ const Home = () => {
             </div>
           ))}
         </div>
-      </div>
 
-      <div>
-        <div className="set_position_search">
-          <TopNavSearch />
-        </div>
-      </div>
-
-      <div className="frame_main_appbarRight">
-        <div className="content">
-          
-          <h2>Trends for you</h2>
-
-          {data_list.map((item, index) => (
-            <div key={index}>
-              <AppBarRight
-                title={item.title}
-                name={item.name}
-                number_tweet={item.number_tweet}
-              />
-            </div>
-          ))}
-          <p className="see">Show more</p>
-        </div>
-
+      <div className="frame_main_appbarRight_ex">
         <div className="content ">
           <h2 className="sub_title ">Who to follow</h2>
 
@@ -90,7 +111,7 @@ const Home = () => {
               />
             </div>
           ))}
-          <p  className="see">Show more</p>
+          <p className="see">Show more</p>
         </div>
 
         <div className="frame_copyright">
@@ -111,4 +132,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Explore;

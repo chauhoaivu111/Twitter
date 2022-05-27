@@ -21,7 +21,7 @@ const BottomAppBar = (props) => {
          
       </div>
 
-      <MenuMobile/>
+   
     </div>
   );
 };

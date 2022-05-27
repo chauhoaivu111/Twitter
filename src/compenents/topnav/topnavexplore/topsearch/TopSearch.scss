@@ -1,0 +1,59 @@
+@use "../../../../sass/" as *;
+
+.main_search_explore {
+  display: flex;
+
+  @include flex(center, unset);
+  // position: relative;
+
+  margin: auto;
+  margin-top: 9px;
+
+  // background-color: bisque;
+  width: 90%;
+  position: absolute;
+  // padding-left: 7em;
+  padding-right: 1rem;
+
+  @include mobile {
+    // display: none;
+    margin-left: 0px !important;
+  }
+
+  .main_search_searchs_explore {
+    height: 50px;
+    border-radius: 30px;
+
+    background-color: #f4f6f8;
+    // overflow: hidden;
+    align-items: center;
+    padding-left: 5rem;
+    font-size: 1.3rem;
+    width: 97%;
+    margin-bottom: 0.7rem;
+
+    @include mobile {
+      width: 70% !important;
+      height: 30px;
+      font-size: 1rem;
+      margin-left: 5rem;
+      margin-bottom: 0.5rem;
+      padding-left: 3rem;
+    }
+  }
+
+  i {
+    position: absolute;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+
+    @include mobile {
+      font-size: 1rem;
+      padding-left: 5.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    // background-color: aqua;
+  }
+}
