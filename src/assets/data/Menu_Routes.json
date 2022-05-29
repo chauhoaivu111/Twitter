@@ -19,12 +19,16 @@
     },
     {
         "display_name":  "Notifications",
-        "route": "/Notifications",
+  
+        "route": "/Notifications"  ,
+      
         "icon":"bx bx-bell",
         "icons":"bx bxs-bell"
         
+        
 
     },
+  
     {
         "display_name":  "Messages",
         "route": "/Messages",

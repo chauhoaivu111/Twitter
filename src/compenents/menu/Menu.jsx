@@ -3,7 +3,7 @@ import "./Menu.scss";
 
 import logo from "../../assets/image/logo.png";
 
-import menu_data from "../../assets/data/Menu_Routes.json";
+import menu_data from "../../assets/data/Menu_Routes";
 import { Link } from "react-router-dom";
 
 import "../../sass/index.scss";
