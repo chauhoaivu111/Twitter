@@ -1,0 +1,126 @@
+
+@use '../../../sass/' as *;
+
+
+.Main_coverphoto{
+
+    // height:100%;
+    width: 100%;
+
+    &__parent{
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+        @include mobile{
+            height: 250px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    &__children{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        z-index: 2;
+        margin-top: -100px;
+        margin-left: 1rem;
+
+        @include mobile{
+            height: 100px;
+            width: 100px;
+            margin-top: -50px;
+        }
+        
+        // border-radius: 50%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+    }
+
+    &__buttons_setup{
+        @include flex(unset,right);
+        // width: 200px;
+        // height: 50px;
+       
+        margin-right: 1.5rem;
+        margin-top: -5.5rem;
+        @include mobile{
+            margin-top: -2.5rem;
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: white;
+            border: 1px solid #999A9B;
+            font-size: 1rem;
+            font-weight: 600;
+            color: black ;
+            @include mobile{
+                width: 120px;
+                height: 35px;
+                font-size: 0.9rem;
+                padding-top:0.1rem ;
+            }
+            &:hover{
+                background-color:#EBECEE;
+            }
+        }
+    }
+
+    &__content_profile{
+        padding-left: 1rem;
+        margin-top: 4rem;
+        @include mobile{
+            margin-top: 1.5rem;
+        }
+        
+
+        h2{
+            padding-bottom: 0.1rem;
+        }
+        p{
+            color: var(--color-text);
+        }
+
+
+
+        &__joined_date{
+            display: flex;
+            @include flex(center,unset);
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            color: var(--color-text);
+            i{
+                font-size: 1.4rem;
+            }
+            p{
+                margin-left: 0.4rem;
+                padding-top: 0.2rem;
+                color: var(--color-text);
+            }
+        }
+        &__followss{
+            display: flex;
+            @include flex(center,unset);
+            p{
+                margin-right: 1rem;
+                color: var(--color-text);
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+}

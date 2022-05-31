@@ -35,7 +35,7 @@ const Lists = () => {
 
         <div className="nav_content">
           <div className="contents_nav">
-            <h2> What's happening</h2>
+            <h2> Discover new Lists</h2>
           </div>
 
           {Lists_data.map((item, index) => (
