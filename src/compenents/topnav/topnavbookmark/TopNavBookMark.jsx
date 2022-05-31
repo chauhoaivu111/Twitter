@@ -2,13 +2,19 @@ import React, { useRef } from "react";
 
 import menu_mobile from "../../../assets/data/Menu_Routes_mobile.json";
 
-import Menu ,{ Menu1, Menu2, Menu3 } from "../../menumobile/MenuMoile";  
+import Menu, { Menu1, Menu2, Menu3 } from "../../menumobile/MenuMoile";
 
 import { Link, useLocation } from "react-router-dom";
-import "./TopNavHome.scss";
-import HV from "../../../assets/image/HV.jpg";
 
-import { data_profile, data_menu1_mobile ,data_menu2_mobile  ,data_menu3_mobile} from '../../../assets/data/Data_mobile_Menu'
+import HV from "../../../assets/image/HV.jpg";
+import './TopNavBookMark.scss';
+
+import {
+  data_profile,
+  data_menu1_mobile,
+  data_menu2_mobile,
+  data_menu3_mobile,
+} from "../../../assets/data/Data_mobile_Menu";
 const MenuItem = (props) => {
   const active = props.active ? "active " : "";
 
@@ -35,7 +41,7 @@ const clickOutsideRef = (content_ref, toggle_ref) => {
   });
 };
 
-const TopNavHome = (props) => {
+const TopNavBookMark = (props) => {
   const menu_ref = useRef(null);
   const menu_toggle_ref = useRef(null);
 
@@ -53,17 +59,23 @@ const TopNavHome = (props) => {
     <div className="header">
       <div className="header__wrap">
         <div className="user_header">
-          <img
+          {/* <img
             src={props.image}
             ref={menu_toggle_ref}
             onClick={() => setActiveMenu()}
-          />
+          /> */}
+          <Link to='/Messages'><i class='bx bx-left-arrow-alt' ></i></Link>
+          <div className="sub_hea_bookmark">
           <h2>{props.Title}</h2>
+          <p>{props.sub}</p>
+          </div>
+         
         </div>
 
-        <div className="button_right_header">
-          <i class="bx bx-wifi"></i>
-        </div>
+        {/* <div className="button_right_header">
+          <i class="bx bx-wifi" ></i>
+          <i class='bx bxl-messenger imessages'></i>
+        </div> */}
       </div>
 
       <ul className="menu_icon_moblie">
@@ -71,7 +83,6 @@ const TopNavHome = (props) => {
           <Link to={item.route} key={index}>
             <MenuItem
               icon={index === activeItem ? item.icons : item.icon}
-              
               active={index === activeItem}
             />
           </Link>
@@ -94,75 +105,43 @@ const TopNavHome = (props) => {
 
         <div className="theme-menu__second_scroll">
           <div className="content_user">
-            {
-              data_profile.map((item,index) => (
-                <div key={index}>
-                  <Menu 
-                 image={item.iamge}
-                 BT={item.BT}
-                 name_user={item.name_user}
-                 sub_name={item.sub_name}
-                 following={item.following}
-                 follower={item.follower}
-                  
-                  />
-
-                </div>
-
-              ))
-            }
-            
+            {data_profile.map((item, index) => (
+              <div key={index}>
+                <Menu
+                  image={item.iamge}
+                  BT={item.BT}
+                  name_user={item.name_user}
+                  sub_name={item.sub_name}
+                  following={item.following}
+                  follower={item.follower}
+                />
+              </div>
+            ))}
           </div>
-          <div className="main_frame_menu" >
-            {
-              data_menu1_mobile.map((item,index) => (
-                <div key={index}>
-
-                  <Menu1  
-                  
-                  icons={item.icons}
-                  titles={item.titles}
-                  />
-
-                </div>
-              ))
-            }
-           
+          <div className="main_frame_menu">
+            {data_menu1_mobile.map((item, index) => (
+              <div key={index}>
+                <Menu1 icons={item.icons} titles={item.titles} />
+              </div>
+            ))}
           </div>
           <div className="second_frame_menu">
-          {
-              data_menu2_mobile.map((item,index) => (
-                <div key={index}>
-
-                  <Menu2
-                  
-                  icons={item.icons}
-                  titles={item.titles}
-                  />
-
-                </div>
-              ))
-            }
+            {data_menu2_mobile.map((item, index) => (
+              <div key={index}>
+                <Menu2 icons={item.icons} titles={item.titles} />
+              </div>
+            ))}
           </div>
-          <div className="third_frame_menu" >
-          {
-              data_menu3_mobile.map((item,index) => (
-                <div key={index}>
-
-                  <Menu3 
-                  
-                  icons={item.icons}
-                  titles={item.titles}
-                  />
-
-                </div>
-              ))
-            }
+          <div className="third_frame_menu">
+            {data_menu3_mobile.map((item, index) => (
+              <div key={index}>
+                <Menu3 icons={item.icons} titles={item.titles} />
+              </div>
+            ))}
           </div>
           <div className="four_frame_menu">
-          <i class='bx bx-log-out'></i>
-          <p>Logout</p>
-
+            <i class="bx bx-log-out"></i>
+            <p>Logout</p>
           </div>
         </div>
       </div>
@@ -170,4 +149,4 @@ const TopNavHome = (props) => {
   );
 };
 
-export default TopNavHome;
+export default TopNavBookMark;

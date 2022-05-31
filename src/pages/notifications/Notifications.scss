@@ -55,7 +55,7 @@
         // background-color: aquamarine;
 
         max-width: max-content;
-        width: 100%;
+        width: 100;
 
         @include flex(center, space-between);
         display: flex;
@@ -80,6 +80,7 @@
         // background-color: pink;
         display: flex;
         width: 100%;
+        // background-color: aqua;
 
         @include mobile {
           width: 100%;
@@ -90,10 +91,12 @@
           width: 100%;
           margin-top: -40px;
           // background-color: black;
+          
 
           @include mobile {
             width: 100%;
             margin-top: -15px;
+           
           }
 
           .main_li {
@@ -107,6 +110,8 @@
 
             @include mobile {
               // background-color: aquamarine;
+              
+              // background-color: aqua;
             }
             &:hover {
               background-color: $backgound_appbar;
@@ -118,13 +123,18 @@
 
             li {
               width: 100%;
+              
+
+              background-color: white;
 
               @include mobile {
                 width: 50%;
                 // justify-content: left;
                 // padding-left: 30px;
-                background-color: white;
+                // background-color: white;
                 // display: none;
+              
+              backdrop-filter: blur(10px);
                 margin-top: -60px;
                 left: 0;
               }
@@ -156,12 +166,14 @@
                 bottom: 0;
                 left: 50%;
                 color: var(--color-text);
+                background-color: white;
               }
               // set active render and hover
               &.active::after {
                 width: 70px;
                 background-color: aquamarine;
                 border-radius: 10px;
+                
 
                 @include mobile {
                   width: 30px;

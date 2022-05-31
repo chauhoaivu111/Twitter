@@ -1,114 +1,176 @@
 
 
-// @use '../../sass/' as *;
+@use '../../sass/' as *;
 
-// .main_home{
-//     display: flex;
-//     position: absolute;
+.main_home{
+    display: flex;
+    position: absolute;
+
+
+    .second_appbar{
+        position: relative;
+
+        padding-left: 3rem;
+        padding-top: 30%;
+
+        .style_fit_padding{
+
+            width: 73%;
+            // background-color: aqua;
+            
+
+
+            h1{
+                font-size: 2.5rem;
+                
+                @include mobile{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 0.9rem;
+                color: #BEC0C2;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+            }
+
+        }
+            
+
+       
+
+        @include mobile{
+            display: none;
+        }
+
+        .frame_button_messages{
+
+            width: 16rem;
+            height: 4rem;
+
+            @include mobile{
+            width: 13rem;
+            height: 4rem;
+            }
+            
+
+            
+            button{
+                width: 100%;
+                height:100% ;
+                border-radius: 40px;
+                background-color: var(--color-twitter);
+                color: white;
+                font-size: large;
+                &:hover{
+                    background-color: #5899FB;
+                }
+            }
+        }
+    }
 
     
 
    
 
+    .frame_messages{
 
-//     .set_position_search{
-//         margin-left: 41.4%;
-//         position: fixed;
-//         // background-color: aquamarine;
-//         margin-bottom: 4rem;
-        
-        
-//     }
+        margin-top: 80px;
+        height: 100vh;
+        background-color: white;
+        width: 50.4rem;
+        // width: 100%;
+        max-width: max-content;
+
+        @include mobile {
+          
+           
+            width: 120%;
+            margin-top: 60px;
+
+      
+        }
+
+        .frame_content_mess{
+           
+          
+
+            padding: 2rem 8.5rem 2rem 8.5rem;
+            
+
+            @include mobile{
+                width: 100%;
+                max-width: max-content;
+                padding: 2rem 2rem 2rem 2rem;
+            }
+         
+
+            h1{
+                font-size: 3rem;
+                @include mobile{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 1.1rem;
+                color: #BEC0C2;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+
+        .frame_button_messages{
+
+            width: 16rem;
+            height: 4rem;
+
+            @include mobile{
+            width: 13rem;
+            height: 4rem;
+            }
+            
+
+            
+            button{
+                width: 100%;
+                height:100% ;
+                border-radius: 40px;
+                background-color: var(--color-twitter);
+                color: white;
+                font-size: large;
+                &:hover{
+                    background-color: #5899FB;
+                }
+            }
+        }
+    }
+    
 
     
-//     .frame_main_appbarRight{
-//         margin-left: 41.5%;
-//         cursor: pointer;
+    .frame_main_appbarRight{
+        margin-left: 41.5%;
+        cursor: pointer;
 
-//         position: fixed;
-//         overflow-y: auto;
-//         // background-color:red;
-//         height: 100vh;
-//         width: 86%;
-//         // border-left: 0.5px solid #E8E8E8;
-//        margin-top: 4%;
-//     //    background-color: red;
+        position: fixed;
+        overflow-y: auto;
+        // background-color:red;
+        height: 100vh;
+        width: 86%;
+        // border-left: 0.5px solid #E8E8E8;
+       margin-top: 4%;
+    //    background-color: red;
 
        
       
 
-//         @include mobile{
-//             display: none;
-//         }
+        @include mobile{
+            display: none;
+        }
 
        
 
-//         .content{
-//             background-color: #F4F6F8;
-//             // background-color: aqua;
-//             width: 25.8%;
-//             border-radius: 20px;
+        
 
-//             margin: 1.5rem;
-//             margin-top: 0px;
-            
-//             height: max-content;
-//             margin-bottom: 1.5%;
-
-//             padding: 1.5rem 1.5rem 1.5rem ;
-            
-
-//             h2{
-//                 padding: 0rem 0 2rem ;
-//             }
-//             .see{
-//                 color:var(--color-twitter);
-//             }
-
-//         }
-//         .marginBottom {
-//             margin-bottom: 20%;
-//         }
-
-
-
-//         .frame_copyright{
-
-//             width: 27%;
-//             border-radius: 20px;
-
-//             margin: 1.5rem;
-//             margin-bottom: 15%;
-          
-          
-
-//             padding: 0rem 1.5rem 1.5rem ;
-
-//             &__one{
-//                 display: flex;
-//                 p{
-//                     margin-right: 0.7rem;
-//                     font-size: 0.9rem;
-//                     color: var(--color-text);
-//                 }
-//             }
-//             &__second {
-
-//                 display: flex;
-//                 margin-top: 0.4rem;
-//                 width: 100%;
-//                 // background-color: aquamarine;
-//                 p{
-//                     margin-right: 0.7rem;
-//                     font-size: 0.9rem;
-//                     color: var(--color-text);
-//                 }
-
-//             }
-
-
-
-//         }
-
-//     }
-// }
+    }
+}

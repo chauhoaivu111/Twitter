@@ -26,6 +26,99 @@
 
     }
 
+    .frame_style_content_secon_nav_list{
+        // background-color: aqua;
+        max-width: max-content;
+        display: flex;
+        width: 80%;
+        @include flex(center,unset);
+
+        h4{
+            padding-top: 0.5rem;
+            font-weight: 700;
+        }
+
+        .frame_img_list{
+            height: 100px;
+            width: 100px;
+            @include mobile{
+                width: 80px;
+                height: 80px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+        }
+
+
+        .main_name_img{
+
+            margin-left: 1rem;
+            @include mobile {
+                margin-left: 0.5rem;
+            }
+
+
+
+            .sub_name_img{
+
+         
+
+                display: flex;
+                @include flex(center,unset);
+        
+                p{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding-top: 0.5rem;
+                    padding-left: 0.5rem;
+                    @include mobile{
+                        font-size: 0.8rem;
+                    }
+                }
+    
+                .sub_image{
+                    height: 30px;
+                    width: 30px;
+                    margin-top: 0.5rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+                }
+    
+            }
+
+        }
+        
+        
+
+    }
+
+    .buttonss {
+        height: 40px;
+        width: 120px;
+        margin-top: 4%;
+        @include mobile{
+            height: 30px;
+            width: 90px;
+            margin-top: 7%;
+
+        }
+        button{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            border-radius: 20px;
+            color: white;
+            
+        }
+    }
+
     
 
     .topic_img{
