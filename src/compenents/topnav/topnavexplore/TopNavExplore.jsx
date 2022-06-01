@@ -60,19 +60,22 @@ const TopNavExplore = (props) => {
   return (
     <div className="header">
       <div className="header__wrap">
-        <div className="user_header">
+        <div className="user_header_ex">
           <img
             src={props.image}
             ref={menu_toggle_ref}
             onClick={() => setActiveMenu()}
           />
-         
+          
           <TopSearch/>
+
+        
         
         </div>
 
         <div className="button_right_header">
           <i class="bx bx-wifi"></i>
+          
         </div>
       </div>
 
