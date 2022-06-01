@@ -199,11 +199,36 @@
 
   .your_list_more{
 
-    padding: 1.5rem;
+    padding: 0px;
+    
+    z-index: 0;
+
+    h2{
+      padding-left: 1rem;
+      margin-top: 1rem;
+     
+
+    }
     p{
-        padding-top: 3rem;
-        padding-left: 1rem;
-        color: #999a9b;
+      margin-top: -3rem !important;
+      font-size: 0.8rem;
+      color: #A8B0BC;
+      margin-bottom: 1rem;
+    }
+
+    .showmoressss {
+      width: 100%;
+      // margin-bottom: 5px;
+      margin-top: 50px;
+      margin-bottom: -30px;
+      // background-color: aqua;
+      p {
+        padding: 30px 20px 30px;
+        color: var(--color-twitter);
+      }
+      &:hover {
+        background-color: $backgound-appbar;
+      }
     }
   }
 

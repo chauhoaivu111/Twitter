@@ -17,10 +17,11 @@ import FisrtNav, {
 } from "../../compenents/topnav/topnavexplore/firstnav/FisrtNav";
 import Lists_data from "../../assets/data/Lists_data";
 import CoverPhoto from "./coverphoto/CoverPhoto";
-import Profile_data,{Sub_profile_data} from "../../assets/data/Profile_data";
+import Profile_data, { Sub_profile_data } from "../../assets/data/Profile_data";
 
 import { Link, useLocation } from "react-router-dom";
 import SubContent from "./sub_content/SubContent";
+import Swiperss from "./swiper/Swiper";
 
 const Profile = () => {
   const titles = {
@@ -50,7 +51,7 @@ const Profile = () => {
 
   const { pathname } = useLocation();
   const active = head_nav_profile.findIndex((e) => e.route === pathname);
-  const activess =Sub_profile_data.findIndex((e) => e.route === pathname);
+  const activess = Sub_profile_data.findIndex((e) => e.route === pathname);
 
   return (
     <div className="main_home">
@@ -72,75 +73,64 @@ const Profile = () => {
         ))}
 
         <div className="main_head_nav_profile">
-        {head_nav_profile.map((item, index) => (
-          <div className="main_head_nav_profile__element" >
-            <Link to={item.route}>
-              <p key={index} >
-                {item.topic}
-              </p>
-              <li className={`${index === active ? "actives" : ""}`}/>
-              
-            </Link>
-          </div>
-        ))}
-
+          {head_nav_profile.map((item, index) => (
+            <div className="main_head_nav_profile__element">
+              <Link to={item.route}>
+                <p key={index}>{item.topic}</p>
+                <li className={`${index === active ? "actives" : ""}`} />
+              </Link>
+            </div>
+          ))}
         </div>
 
-        
-
         <div className="frame_list">
-        {Sub_profile_data.map((item, index) => (
-            <div className={`divtest ${index === activess ? "active_next" : ""}`}>
+          {Sub_profile_data.map((item, index) => (
+            <div
+              className={`divtest ${index === activess ? "active_next" : ""}`}
+            >
+              <div
+                className={`fakeh2active ${
+                  index === activess ? "active_next" : ""
+                }`}
+              >
+                <div className="contents_nav">
+                  <h2> Who to follow</h2>
+                </div>
 
-            <div  className={`fakeh2active ${index === activess ? "active_next" : ""}`}>
-
-            <div className="contents_nav">
-            <h2> Who to follow</h2>
-          </div>
-
-                {
-                    Sub_profile_data.map((item,index) =>(
-                       <div key={index}>
-
-                        <SubContent
-                        icon={item.icon}
-                        user_follow={item.user_follow}
-                        image={item.iamge}
-                        Name={item.Name}
-                        Sub_name={item.Sub_name}
-                        content={item.content}
-                        
-                        />
-                       </div>
-                       
-                    ))
-                }    
-
-
+                {Sub_profile_data.map((item, index) => (
+                  <div key={index}>
+                    <SubContent
+                      icon={item.icon}
+                      user_follow={item.user_follow}
+                      image={item.iamge}
+                      Name={item.Name}
+                      Sub_name={item.Sub_name}
+                      content={item.content}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
-          
-            </div>
-        ))}
+          ))}
 
-            <div className="div_showmoress">
+          <div className="div_showmoress">
             <p>Show more</p>
           </div>
         </div>
 
         <div className="nav_content">
-          {/* <div className="contents_nav">
-            <h2> What's happening</h2>
-          </div> */}
-
          
         </div>
-        {/* <div className="your_list_more">
-          <h2>Your List</h2>
+        <div className="your_list_more">
+          <h2>Topics to follow</h2>
           <p>
-            You haven't created or followed any Lists. When you do, they'll show
-            up here.
+          Tweets about the Topics you follow show up in your Home timeline
           </p>
-        </div> */}
+          <Swiperss />
+          <div className="showmoressss">
+            <p>More topics</p>
+          </div>
+        </div>
       </div>
 
       <div>

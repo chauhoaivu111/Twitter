@@ -1,0 +1,44 @@
+
+
+@use '../../../sass/' as *;
+
+.swiper-button-next {
+  background-image: url("../../../assets//svg//previous-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  display: none;
+}
+.swiper-button-prev {
+  background-image: url("../../../assets//svg//back-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  display: none;
+}
+
+.swiper {
+  height: auto;
+  
+//   background-color: aqua;
+  &:hover{
+    .swiper-button-prev,.swiper-button-next{
+        display: block;
+    }
+
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-slide{
+    
+    width: 40%;
+    @include mobile{
+        width: 30%;
+    }
+}
