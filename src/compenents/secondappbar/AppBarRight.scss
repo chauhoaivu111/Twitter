@@ -1,0 +1,72 @@
+
+@use '../../sass/' as * ;
+
+.main_frames{
+    
+    // margin-bottom: 1.5rem;
+    // background-color: aquamarine;
+
+    &__contents{
+        display: flex;
+        // background-color: aqua;
+        @include flex(unset,space-between);
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+
+        padding: 1.5rem 1.5rem 1.5rem ;
+        &:hover{
+            background-color: #E1E2EB;
+        }
+       
+
+     
+
+       
+
+            .title{
+                color: #818181;
+                font-size: 0.9rem;
+                
+            }
+            
+            .name{
+                font-weight: 600;
+                padding: 0.4rem 0 0.4rem ;
+                font-size: 1.2rem;
+            }
+            .number_tweet{
+                color: #818181;
+            }
+
+
+        .frame_icon_appbarright{
+
+          
+            
+            button{
+
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: transparent;
+                outline: 0;
+                i{
+                    font-size: 1.5rem;
+                    padding-top: 0.2rem;
+                    
+                }
+
+                &:hover{
+                    background-color: #e3effa;
+                    color: #63b3fc;
+                }
+            }
+
+
+        }
+
+       
+        
+    }
+}

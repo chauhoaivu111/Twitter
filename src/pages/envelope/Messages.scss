@@ -1,0 +1,176 @@
+
+
+@use '../../sass/' as *;
+
+.main_home{
+    display: flex;
+    position: absolute;
+
+
+    .second_appbar{
+        position: relative;
+
+        padding-left: 3rem;
+        padding-top: 30%;
+
+        .style_fit_padding{
+
+            width: 73%;
+            // background-color: aqua;
+            
+
+
+            h1{
+                font-size: 2.5rem;
+                
+                @include mobile{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 0.9rem;
+                color: #BEC0C2;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+            }
+
+        }
+            
+
+       
+
+        @include mobile{
+            display: none;
+        }
+
+        .frame_button_messages{
+
+            width: 16rem;
+            height: 4rem;
+
+            @include mobile{
+            width: 13rem;
+            height: 4rem;
+            }
+            
+
+            
+            button{
+                width: 100%;
+                height:100% ;
+                border-radius: 40px;
+                background-color: var(--color-twitter);
+                color: white;
+                font-size: large;
+                &:hover{
+                    background-color: #5899FB;
+                }
+            }
+        }
+    }
+
+    
+
+   
+
+    .frame_messages{
+
+        margin-top: 80px;
+        height: 100vh;
+        background-color: white;
+        width: 50.4rem;
+        // width: 100%;
+        max-width: max-content;
+
+        @include mobile {
+          
+           
+            width: 120%;
+            margin-top: 60px;
+
+      
+        }
+
+        .frame_content_mess{
+           
+          
+
+            padding: 2rem 8.5rem 2rem 8.5rem;
+            
+
+            @include mobile{
+                width: 100%;
+                max-width: max-content;
+                padding: 2rem 2rem 2rem 2rem;
+            }
+         
+
+            h1{
+                font-size: 3rem;
+                @include mobile{
+                    font-size: 2.5rem;
+                }
+            }
+            p{
+                font-size: 1.1rem;
+                color: #BEC0C2;
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+            }
+        }
+
+
+        .frame_button_messages{
+
+            width: 16rem;
+            height: 4rem;
+
+            @include mobile{
+            width: 13rem;
+            height: 4rem;
+            }
+            
+
+            
+            button{
+                width: 100%;
+                height:100% ;
+                border-radius: 40px;
+                background-color: var(--color-twitter);
+                color: white;
+                font-size: large;
+                &:hover{
+                    background-color: #5899FB;
+                }
+            }
+        }
+    }
+    
+
+    
+    .frame_main_appbarRight{
+        margin-left: 41.5%;
+        cursor: pointer;
+
+        position: fixed;
+        overflow-y: auto;
+        // background-color:red;
+        height: 100vh;
+        width: 86%;
+        // border-left: 0.5px solid #E8E8E8;
+       margin-top: 4%;
+    //    background-color: red;
+
+       
+      
+
+        @include mobile{
+            display: none;
+        }
+
+       
+
+        
+
+    }
+}
