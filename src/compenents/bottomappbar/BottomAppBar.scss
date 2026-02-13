@@ -7,7 +7,7 @@
     display: flex;
     @include flex(center,space-between);
 
-    padding: 0px 1.5rem 0px;
+    padding: 0px 1.2rem 0px;
     
 
 
@@ -18,9 +18,9 @@
 
         &__avatar{
 
-            height: 50px;
-            width: 50px;
-            margin-bottom: 2rem;
+            height: 40px;
+            width: 40px;
+            margin-bottom: 1.6rem;
             
             
 
@@ -33,16 +33,17 @@
 
         &__contents{
 
-            padding-left: 1rem;
-            padding-bottom: 2rem;
+            padding-left: 0.8rem;
+            padding-bottom: 1.6rem;
 
             .title{
                 font-weight: 600;
-                
+                font-size: 0.96rem;
             }
 
             .subname{
                 color: #818181;
+                font-size: 0.72rem;
             }
 
         }
@@ -51,14 +52,15 @@
 
     }
     &__right{
-        margin-bottom: 2rem;
+        margin-bottom: 1.6rem;
 
         button{
-            height: 35px;
-            width: 90px;
+            height: 28px;
+            width: 72px;
             background-color: black;
             color: white;
-            border-radius: 20px;
+            border-radius: 16px;
+            font-size: 0.88rem;
         }
     }
 

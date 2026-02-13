@@ -9,8 +9,8 @@
     @include flex(center,unset);
     position: relative;
 
-    margin-left: 1.5rem;
-    margin-top: 9px;
+    margin-left: 1.2rem;
+    margin-top: 7px;
 
     // background-color: bisque;
 
@@ -27,15 +27,15 @@
 
     &__searchs{
 
-        height: 50px;
-        border-radius: 30px;
+        height: 40px;
+        border-radius: 24px;
 
         background-color: #F4F6F8;
         // overflow: hidden;
         align-items: center;
-        padding-left: 5rem;
-        font-size: 1.3rem;
-        width: 26rem;
+        padding-left: 4rem;
+        font-size: 1.04rem;
+        width: 20.8rem;
 
 
        
@@ -51,8 +51,8 @@
     i{
         
         position: absolute;
-        font-size: 1.5rem;
-        padding-left: 2rem;
+        font-size: 1.2rem;
+        padding-left: 1.6rem;
 
         
 

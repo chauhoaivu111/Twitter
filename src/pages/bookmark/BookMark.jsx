@@ -7,14 +7,13 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
-import BM from "../../assets/image/bookmark.jpg";
+import { getAvatarUrl, getPhotoUrl } from "../../utils/avatarUrl";
 import TopNavBookMark from "../../compenents/topnav/topnavbookmark/TopNavBookMark";
 
 const BookMark = () => {
   const titles = {
     title: "Bookmakrs",
-    HV: HV,
+    HV: getAvatarUrl(0),
     sub: "@HoaiVu08052001",
   };
 
@@ -24,7 +23,7 @@ const BookMark = () => {
 
       <div className="frame_bookmark">
         <div className="frame_img">
-          <img src={BM} alt="" />
+          <img src={getPhotoUrl("bookmark", 600, 300)} alt="" />
         </div>
 
         <h1>Save Tweets for later</h1>

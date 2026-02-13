@@ -1,110 +1,83 @@
-import HV from "../image/HV.jpg";
-import Dolar from "../image/img_dolar.jpg";
-import PN from "../../assets/image/PN.jpg";
-import AY from "../image/img_AY.jpg";
-import MC from "../image/MC.jpg";
-import img_MC from "../image/img_MC.jpg";
+import { getAvatarUrl, getPhotoUrl } from "../../utils/avatarUrl";
 
 const data_content = [
   {
-    // current: "bx bx-repost",
-    avatar: MC,
+    avatar: getAvatarUrl(1),
     name_user: "Minh Chí",
     time: "2h",
     subname_user: "@MinhChi01012000 . 4h",
-    // current_title: "Hoài Vũ" + " " + "Retweeted",
-    content: "Đẹp Trai Không sfbsjdfhjsdkf fshdiufhusif suihfuisef yusufyef suhufisdf fshdfjdsk sfndskfjsd sjfsdjfk sfjs sjfhsjf uiguasf auahfs ahdaud uadgads  sfy7rw rwyef usyfe fwfgw ssyfew f",
-    image: img_MC,
+    content: "Morning coffee and code. Best way to start the day! ☕️ What's your favorite way to kick off a productive morning?",
+    image: getPhotoUrl(101, 600, 400),
     icon: "bx bx-message-rounded",
-    likes: "1",
-
+    likes: "124",
     title: "Reply",
-
     icon1: "bx bx-repost",
-    likes1: "2",
+    likes1: "28",
     title1: "Retweet",
-
     icon2: "bx bx-heart",
-    likes2: "1",
+    likes2: "89",
     title2: "Like",
-
     icon3: "bx bx-upload",
     title3: "Share",
   },
-
   {
-    // current: "bx bx-repost",
-    avatar: PN,
+    avatar: getAvatarUrl(2),
     name_user: "Phụng Nhi",
     time: "just now",
     subname_user: "@PhungNhi08200205 . 4h",
-    // current_title: "Hoài Vũ" + " " + "Retweeted",
-    content: "Anh Yêu của tui nè.. ",
-    image: AY,
+    content: "Anh Yêu của tui nè.. 💕 Cảm ơn vì đã luôn bên cạnh! Happy anniversary to us!",
+    image: getPhotoUrl(102, 600, 400),
     icon: "bx bx-message-rounded",
-    likes: "4",
-
+    likes: "412",
     title: "Reply",
-
     icon1: "bx bx-repost",
-    likes1: "8",
+    likes1: "56",
     title1: "Retweet",
-
     icon2: "bx bx-heart",
-    likes2: "3",
+    likes2: "1.2K",
     title2: "Like",
-
     icon3: "bx bx-upload",
     title3: "Share",
   },
   {
     current: "bx bx-repost",
-    avatar: HV,
+    avatar: getAvatarUrl(3),
     name_user: "Hoài Vũ",
-    time: "just now",
+    time: "45m",
     subname_user: "@Hoaivu08052001 . just now",
     current_title: "Hoài Vũ" + " " + "Retweeted",
-    content: "kết quả của sự cố gắn... don't give up ",
-    image: Dolar,
+    content: "Kết quả của sự cố gắn... Don't give up! Every small step counts. Keep pushing forward. 🚀",
+    image: getPhotoUrl(103, 600, 400),
     icon: "bx bx-message-rounded",
-    likes: "2",
-
+    likes: "67",
     title: "Reply",
-
     icon1: "bx bx-repost",
-    likes1: "6",
+    likes1: "23",
     title1: "Retweet",
-
     icon2: "bx bx-heart",
-    likes2: "1",
+    likes2: "156",
     title2: "Like",
-
     icon3: "bx bx-upload",
     title3: "Share",
   },
-
   {
     current: "bx bx-repost",
-    avatar: HV,
+    avatar: getAvatarUrl(4),
     name_user: "Hoài Vũ",
-    time: "just now",
+    time: "1h",
     subname_user: "@Hoaivu08052001 . just now",
     current_title: "Hoài Vũ" + " " + "Retweeted",
-    content: "kết quả của sự cố gắn... don't give up ",
-    image: HV,
+    content: "Weekend vibes only! 🌴 Exploring new places and making memories. Where should I travel next? Drop your suggestions below!",
+    image: getPhotoUrl(104, 600, 400),
     icon: "bx bx-message-rounded",
-    likes: "2",
-
+    likes: "203",
     title: "Reply",
-
     icon1: "bx bx-repost",
-    likes1: "6",
+    likes1: "41",
     title1: "Retweet",
-
     icon2: "bx bx-heart",
-    likes2: "1",
+    likes2: "534",
     title2: "Like",
-
     icon3: "bx bx-upload",
     title3: "Share",
   },

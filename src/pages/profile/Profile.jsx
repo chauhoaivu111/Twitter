@@ -7,8 +7,7 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
-import BM from "../../assets/image/bookmark.jpg";
+import { getAvatarUrl } from "../../utils/avatarUrl";
 import TopNavProfile from "../../compenents/topnav/topnavprofile/TopNavProfile";
 import { List_Second_nav } from "../../assets/data/Second_Nav_List";
 import FisrtNav, {
@@ -26,7 +25,7 @@ import Swiperss from "./swiper/Swiper";
 const Profile = () => {
   const titles = {
     title: "Hoài Vũ",
-    HV: HV,
+    HV: getAvatarUrl(0),
     sub: "5 Tweets",
   };
 

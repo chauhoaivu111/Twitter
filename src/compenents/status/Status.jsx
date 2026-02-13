@@ -1,14 +1,14 @@
 import React from "react";
 
 import "./Status.scss";
-import HV from "../../assets/image/HV.jpg";
+import { getAvatarUrl } from "../../utils/avatarUrl";
 
 const Status = () => {
   return (
     <div className="status">
       <div className="status__content">
         <div className="status__content__user">
-          <img src={HV} alt="" />
+          <img src={getAvatarUrl(0)} alt="" />
         </div>
 
         <div className="status__content__enter">

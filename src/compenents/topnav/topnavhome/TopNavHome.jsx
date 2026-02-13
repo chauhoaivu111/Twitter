@@ -6,7 +6,6 @@ import Menu ,{ Menu1, Menu2, Menu3 } from "../../menumobile/MenuMoile";
 
 import { Link, useLocation } from "react-router-dom";
 import "./TopNavHome.scss";
-import HV from "../../../assets/image/HV.jpg";
 
 import { data_profile, data_menu1_mobile ,data_menu2_mobile  ,data_menu3_mobile} from '../../../assets/data/Data_mobile_Menu'
 const MenuItem = (props) => {

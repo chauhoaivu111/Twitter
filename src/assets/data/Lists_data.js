@@ -1,39 +1,24 @@
-
-
-import PN from '../../assets/image/PN.jpg';
-import HV from '../../assets/image/HV.jpg';
-import MC from '../../assets/image/MC.jpg';
-
-import sub_PN from '../../assets/image/img_dolar.jpg';
-import sub_HV from '../../assets/image/covid_explore.jpg';
-import sub_MC from   '../../assets/image/img_explore.jpg';
+import { getAvatarUrl, getPhotoUrl } from "../../utils/avatarUrl";
 
 const Lists_data = [
-    {
-        image:PN,
-        sub_image:sub_PN,
-        sub_ame:"@PhungNHi08052002",
-        Name:"Phụng Nhi"
-        
+  {
+    image: getAvatarUrl(20),
+    sub_image: getPhotoUrl(201, 400, 200),
+    sub_ame: "@PhungNHi08052002",
+    Name: "Phụng Nhi",
+  },
+  {
+    image: getAvatarUrl(21),
+    sub_image: getPhotoUrl(202, 400, 200),
+    sub_ame: "@HoaiVu22052002",
+    Name: "Hoài Vũ",
+  },
+  {
+    image: getAvatarUrl(22),
+    sub_image: getPhotoUrl(203, 400, 200),
+    sub_ame: "@MinhChi01012000",
+    Name: "Minh Chí",
+  },
+];
 
-    },
-    {
-        image:HV,
-        sub_image:sub_HV,
-        sub_ame:"@HoaiVu22052002",
-        Name:"Hoài Vũ"
-        
-
-    },
-    {
-        image:MC,
-        sub_image:sub_MC,
-        sub_ame:"@MinhChi01012000",
-        Name:"Minh Chí"
-        
-
-    }
-
-]
-
-export default Lists_data
+export default Lists_data;

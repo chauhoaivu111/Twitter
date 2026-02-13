@@ -6,24 +6,16 @@
 
   .frame_statusss {
     margin-top: 80px;
-    // max-width: max-content  ;
-    width: 48.9rem;
-    // width: 100%;
+    width: 39.12rem;
     background-color: white;
-    // background-color: red;
     height: max-content;
     min-height: 140px;
-
     cursor: pointer;
 
     @include mobile {
-      // display: none;
-
+      max-width: max-content;
       width: 100%;
       margin-top: 60px;
-
-      // margin-right: 0px;
-      // width: 50%;
     }
     &__contents {
       // margin-top: 1rem;
@@ -78,10 +70,17 @@
 
       &__nav {
         // background-color: pink;
-        display: flex;
-        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 10px;
+        justify-content: center;
+        width: 41.2%;
         // background-color: aqua;
+        // background-color: white !important;
         z-index: 0;
+        position: fixed;
+        margin-top: -40px;
+
 
         @include mobile {
           width: 100%;
@@ -89,107 +88,93 @@
 
         .divactive {
           display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
-          margin-top: -40px;
-          // background-color: black;
-          
+          margin-top: -20px;
+          // background-color: black !important;
+          height: 80px;
 
           @include mobile {
             width: 100%;
             margin-top: -15px;
-           
           }
 
           .main_li {
             position: fixed;
-            // background-color: aqua;
-            background: rgba(255, 255, 255, 0.5);
-            backdrop-filter: blur(10px);
+            // background: rgba(255, 255, 255, 0.5);
+            // backdrop-filter: blur(10px);
             border-bottom: $border-line;
-            width: 20.6%;
+            // width: 39.12rem;
+            // max-width: 39.12rem;
             color: black;
+            height: 80px;
+            background-color: white !important;
+            z-index: 1000;
 
-            @include mobile {
-              // background-color: aquamarine;
-              
-              // background-color: aqua;
-            }
             &:hover {
               background-color: $backgound_appbar;
               color: black;
             }
             @include mobile {
               width: 100%;
+              max-width: 100%;
             }
 
-            li {
-              width: 100%;
-              
+            width: 100%;
+            background-color: transparent;
 
-              background-color: white;
-
-              @include mobile {
-                width: 50%;
-                // justify-content: left;
-                // padding-left: 30px;
-                // background-color: white;
-                // display: none;
-              
+            @include mobile {
+              width: 50%;
               backdrop-filter: blur(10px);
-                margin-top: -60px;
-                left: 0;
-              }
+              margin-top: -60px;
+              left: 0;
+            }
 
-              height: 70px;
-              @include flex(center, space-between);
-              justify-content: center;
+            @include flex(center, space-between);
+            justify-content: center;
+            position: relative;
+            font-size: 1.3rem;
 
-              // set defualt space
-              position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              height: 4px;
+              width: 0;
+              transform: translateX(-50%);
+              background-color: transparent;
+              border-radius: 10px;
+              transition: width 0.35s ease, left 0.35s ease, transform 0.35s ease, background-color 0.2s ease;
+            }
 
-              // create effect underline title
-
-              // use affter
-
-              font-size: 1.3rem;
-
-              &::after {
-                content: "";
-
-                width: 0;
-
-                height: 6px;
-                transition: width 0.5s ease;
-                // background-color: red;
-                transform: translate(-50%);
-                // make position absoluted and follow tittle
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                color: var(--color-text);
-                background-color: white;
-              }
-              // set active render and hover
-              &.active::after {
-                width: 70px;
-                background-color: aquamarine;
-                border-radius: 10px;
-                
-
-                @include mobile {
-                  width: 30px;
-                }
-              }
-
-              &:hover::after {
-                width: 100%;
-                @include mobile {
-                  width: 30px;
-                }
+            &.active::after {
+              width: 36px;
+              background-color: #73f9d4; // aquamarine / 浅蓝绿
+              @include mobile {
+                width: 28px;
               }
             }
-            li.active {
-              color: black;
+
+            &:hover::after {
+              width: 100%;
+              left: 0;
+              transform: none;
+              background-color: #73f9d4;
+              @include mobile {
+                width: 100%;
+              }
+            }
+
+            &.active:hover::after {
+              width: 100%;
+              left: 0;
+              transform: none;
+            }
+
+            &.active {
+              color: rgb(25, 24, 24);
               font-weight: 600;
             }
           }

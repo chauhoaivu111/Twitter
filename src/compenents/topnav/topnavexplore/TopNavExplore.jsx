@@ -5,7 +5,6 @@ import menu_mobile from "../../../assets/data/Menu_Routes_mobile.json";
 import Menu, { Menu1, Menu2, Menu3 } from "../../menumobile/MenuMoile";
 
 import { Link, useLocation } from "react-router-dom";
-import HV from "../../../assets/image/HV.jpg";
 import "./TopNavExplore.scss";
 
 

@@ -7,8 +7,7 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
-import BM from "../../assets/image/bookmark.jpg";
+import { getAvatarUrl } from "../../utils/avatarUrl";
 import TopNavLists from "../../compenents/topnav/topnavlists/TopNavLists";
 import { List_Second_nav } from "../../assets/data/Second_Nav_List";
 import FisrtNav, {Second_Nav, Second_Nav_Lists} from "../../compenents/topnav/topnavexplore/firstnav/FisrtNav";
@@ -16,7 +15,7 @@ import Lists_data from '../../assets/data/Lists_data';
 const Lists = () => {
   const titles = {
     title: "Lists",
-    HV: HV,
+    HV: getAvatarUrl(0),
     sub: "@HoaiVu08052001",
   };
 

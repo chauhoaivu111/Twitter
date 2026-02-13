@@ -112,7 +112,9 @@
       }
     }
     &__second {
-      display: flex;
+      // display: flex;
+      // display: grid;
+      // grid-template-columns: repeat(2, 1fr);
       margin-top: 0.4rem;
       width: 100%;
       // background-color: aquamarine;

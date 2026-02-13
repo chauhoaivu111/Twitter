@@ -8,7 +8,7 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
+import { getAvatarUrl } from "../../utils/avatarUrl";
 import Status from "../../compenents/status/Status";
 import PostCard from "../../compenents/postcard/PostCard";
 
@@ -17,7 +17,7 @@ import data_content from "../../assets/data/Data_content";
 const Home = () => {
   const titles = {
     title: "Home",
-    HV: HV,
+    HV: getAvatarUrl(0),
   };
 
   return (

@@ -1,10 +1,9 @@
 import React from "react";
 import TopNavExplore from "../../compenents/topnav/topnavexplore/TopNavExplore";
-import HV from "../../assets/image/HV.jpg";
+import { getAvatarUrl, getPhotoUrl } from "../../utils/avatarUrl";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
 import "./Explore.scss";
-import player from "../../assets/image/img_explore.jpg";
 
 import FisrtNav, { Second_Nav } from "../../compenents/topnav/topnavexplore/firstnav/FisrtNav";
 import data_explore_nav from "../../assets/data/content_explore.json";
@@ -15,7 +14,7 @@ import data_content from "../../assets/data/Data_content";
 const Explore = () => {
   const titles = {
     title: "Explore",
-    HV: HV,
+    HV: getAvatarUrl(0),
   };
 
   return (
@@ -23,7 +22,7 @@ const Explore = () => {
       <TopNavExplore Title={titles.title} image={titles.HV} />
 
       <div className="main_explore__only_image">
-        <img src={player} alt="" />
+        <img src={getPhotoUrl("explore", 600, 300)} alt="" />
       </div>
 
       <div className="nav_content">
@@ -118,7 +117,7 @@ const Explore = () => {
           <div className="frame_copyright__one">
             <p>Term of Service</p>
             <p>Privacy Policy</p>
-            <p>Cookie Policy</p>
+            {/* <p>Cookie Policy</p> */}
           </div>
           <div className="frame_copyright__second">
             <p>Accessibility</p>

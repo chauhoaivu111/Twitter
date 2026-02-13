@@ -2,12 +2,12 @@ import React from "react";
 
 import TopNavMessages from "../../compenents/topnav/tonavmessages/TopNavMessages";
 import "./Messages.scss";
-import HV from '../../assets/image/HV.jpg';
+import { getAvatarUrl } from '../../utils/avatarUrl';
 
 const EnveLop = () => {
   const titles = {
     title: "Envelop",
-    HV:HV
+    HV: getAvatarUrl(0),
   };
 
   return (

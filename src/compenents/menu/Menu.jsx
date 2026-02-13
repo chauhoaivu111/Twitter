@@ -2,12 +2,11 @@ import React from "react";
 import "./Menu.scss";
 
 import logo from "../../assets/image/logo.png";
-
 import menu_data from "../../assets/data/Menu_Routes";
 import { Link } from "react-router-dom";
 
 import "../../sass/index.scss";
-import HV from "../../assets/image/HV.jpg"
+import { getAvatarUrl } from "../../utils/avatarUrl";
 
 const MenuItem = (props) => {
   const active = props.active ? "active " : "";
@@ -58,7 +57,7 @@ const Menu = (props) => {
 
         <div className="frame_fake_button">
           <div className="frame_fake_button_img">
-            <img src={HV} alt =''/>
+            <img src={getAvatarUrl(0)} alt =''/>
             
           </div>
           <div className="frame_fake_button_title">

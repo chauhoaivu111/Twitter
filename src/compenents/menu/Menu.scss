@@ -7,7 +7,7 @@
     top:0;
     left: 0;
     height: 100vh;
-    width: 510px;
+    width: 408px;
     // min-width: 400px;
     // box-shadow: var(--box-shadow);
     border-right: 0.5px solid #E8E8E8;
@@ -26,15 +26,15 @@
 }
 
 .sidebar__logo{
-    height: 70px;
+    height: 56px;
     align-items: center;
     justify-content: center;
-    padding: 2px 9.5rem;
+    padding: 2px 7.6rem;
     
 
     .logohover{
-        height: 55px;
-        width: 55px;
+        height: 44px;
+        width: 44px;
       
         align-items: center;
         text-align: center;
@@ -53,8 +53,8 @@
   
 
     img{
-        height: 40px;
-        width: 40px;
+        height: 32px;
+        width: 32px;
         align-items: center;
         text-align: center;
         padding-left: 0.5px;
@@ -67,7 +67,7 @@
 }
 
 .sidebar__item{
-    padding: 0px 9rem;
+    padding: 0px 7.2rem;
 }
 
 
@@ -76,12 +76,12 @@
     // background-color: aqua;
 
     font-weight: 600px;
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.56rem;
     align-items: center;
-    height: 55px;
+    height: 44px;
     display: flex;
-    border-radius: 30px;
+    border-radius: 24px;
     max-width: max-content;
     width: 100%;
 
@@ -89,10 +89,10 @@
     
 
     i{
-        margin-right: 1rem;
-        font-size: 2rem;
+        margin-right: 0.8rem;
+        font-size: 1.6rem;
         align-items: center;
-        margin-left: 1rem;
+        margin-left: 0.8rem;
         
        
     }
@@ -105,17 +105,17 @@
         
     }
     span{
-        padding-right: 1rem;
+        padding-right: 0.8rem;
     }
 
     .frame_news{
         
         
         color: #1da1f2;
-        margin-top: -70px;
+        margin-top: -56px;
         // background-color: aqua;
-        font-size: 60px;
-        margin-left: 2rem;
+        font-size: 48px;
+        margin-left: 1.6rem;
         position: absolute;
 
     }
@@ -134,21 +134,21 @@
 
 .frame_Button{
 
-    height: 70px;
+    height: 56px;
     align-items: center;
     justify-content: center;
-    padding: 2px 9rem;
+    padding: 2px 7.2rem;
     position: absolute;
-    width: 300px;
+    width: 240px;
 
     button{
 
-       width: 300px;
+       width: 240px;
        background-color: #1da1f2;
        color: white;
-       height: 60px;
-       border-radius: 30px;
-       font-size: 1.2rem;
+       height: 48px;
+       border-radius: 24px;
+       font-size: 0.96rem;
        
 
         
@@ -158,44 +158,44 @@
 
 .frame_fake_button{
 
-    height: 70px;
+    height: 56px;
     // align-items: center;
     // justify-content: center;
 
     position: absolute;
 
-    width: 300px;
-    margin-top: 12rem;
+    width: 240px;
+    margin-top: 9.6rem;
     display: flex;
     align-items: center;
-    border-radius: 35px;
+    border-radius: 28px;
     cursor: pointer;
 
     .frame_fake_button_img{
-        height: 2.5rem;
-        width: 2.5rem;
+        height: 1.5rem;
+        width: 1.5rem;
         
 
         img{
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            margin: 0 1rem ;
+            margin: 0 0.8rem ;
         }
     }
 
     .frame_fake_button_title{
-        margin-left: 2rem;
+        margin-left: 1.6rem;
         .NameUser{
-            font-size: 1.1rem;
+            font-size: 0.88rem;
             font-weight: 600;
         }
     }
     
     .frame_icon_dot{
-        margin-left: 15%;
+        margin-left: 7%;
         i{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             cursor: pointer;
         }
     }

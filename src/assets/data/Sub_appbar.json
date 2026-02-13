@@ -1,12 +1,1 @@
-[
-    {
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsIlzGp1laQheiAAjrbJJ3pasHLjMBnIUEZg&usqp=CAU",
-        "name":"David",
-        "subname":"@KenDavid1982"
-    },
-    {
-        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTWIiBcmB9MXYfxe6-xQsoktlroxdnWIEp-dg-eUQoaEXIf0bw_59ZPW1bK12OXAJsBn0&usqp=CAU",
-        "name":"Josh",
-        "subname":"@joshDan2209"
-    }
-]
+[{"img":"https://i.pravatar.cc/200?u=30","name":"David","subname":"@KenDavid1982"},{"img":"https://i.pravatar.cc/200?u=31","name":"Josh","subname":"@joshDan2209"}]

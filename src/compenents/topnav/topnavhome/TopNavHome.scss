@@ -5,7 +5,7 @@
   // position: absolute;
   justify-content: space-between;
   width: 41.2%;
-  height: 5rem;
+  height: 4rem;
   background: rgba(255,255,255,0.5);
   // background-color: blanchedalmond;
   
@@ -66,14 +66,15 @@
   
 
     .user_header{
-        height: 40px;
-        width: 40px;
+        height: 32px;
+        width: 32px;
         border-radius: 50%;
         @include flex(center,unset);
-        margin-left: 1rem;
+        margin-left: 0.8rem;
 
         h2{
             padding-left: 0rem;
+            font-size: 1.2rem;
 
             @include mobile{
               padding-left: 1rem;
@@ -107,8 +108,8 @@
     position: relative;
 
      i{
-         font-size: 1.5rem;
-         padding-right: 1rem;
+         font-size: 1.2rem;
+         padding-right: 0.8rem;
      }
     
     }

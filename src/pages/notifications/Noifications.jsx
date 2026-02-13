@@ -8,14 +8,14 @@ import data_list from "../../assets/data/second_appbar.json";
 import TopNavSearch from "../../compenents/topnav/topnavsearch/TopNavSearch";
 import BottomAppBar from "../../compenents/bottomappbar/BottomAppBar";
 import sub_list from "../../assets/data/Sub_appbar.json";
-import HV from "../../assets/image/HV.jpg";
+import { getAvatarUrl } from "../../utils/avatarUrl";
 import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 import { Link } from "react-router-dom";
 
 const Notifications = () => {
   const titles = {
     title: "Notifications",
-    HV: HV,
+    HV: getAvatarUrl(0),
   };
 
   const headerNav_notifi = [
@@ -80,18 +80,15 @@ const Notifications = () => {
 
               <ul className="main_of_second__nav">
                 {headerNav_notifi.map((item, i) => (
-                  <div className="divactive">
-                    <div className="main_li">
-                      <Link to={item.routes}>
-                        <li
-                          key={i}
-                          className={` ${i === active ? "active" : ""}`}
-                        >
-                          {item.display}
-                        </li>
-                      </Link>
+                  <li key={i}>
+                    <div className="divactive">
+                      <div
+                        className={`main_li ${i === active ? "active" : ""}`}
+                      >
+                        <Link to={item.routes}>{item.display}</Link>
+                      </div>
                     </div>
-                  </div>
+                  </li>
                 ))}
               </ul>
 
@@ -101,14 +98,12 @@ const Notifications = () => {
                     <div>
                       <div
                         key={i}
-                        className={` sub ${
-                          i === active_sub ? "active_sub" : ""
-                        }`}
+                        className={` sub ${i === active_sub ? "active_sub" : ""
+                          }`}
                       >
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i
@@ -118,9 +113,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i
@@ -132,9 +126,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i
@@ -146,9 +139,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i
@@ -160,9 +152,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i
@@ -174,9 +165,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i className={item.icon}></i>
@@ -184,9 +174,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i className={item.icon}></i>
@@ -194,9 +183,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i className={item.icon}></i>
@@ -204,9 +192,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i className={item.icon}></i>
@@ -214,9 +201,8 @@ const Notifications = () => {
                           </div>
                         </div>
                         <div
-                          className={` frame_sub ${
-                            i === active_sub ? "active_sub" : ""
-                          }`}
+                          className={` frame_sub ${i === active_sub ? "active_sub" : ""
+                            }`}
                         >
                           <div className="fit_flex">
                             <i className={item.icon}></i>
